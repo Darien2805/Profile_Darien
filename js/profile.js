@@ -8,10 +8,6 @@ function showTime(){
     var session = "AM";
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     
-    if(h == 0){
-        h = 12;
-    }
-    
     // between 7pm to 7am display night
     if (h >= 19 || h <= 7){
         document.getElementById("profile_row").style.backgroundColor = "#222222"
@@ -19,6 +15,10 @@ function showTime(){
         document.getElementById("MyClockDisplay").style.color = "white"
         document.getElementById("sun_moon").classList.replace("sun", "moon")
         document.getElementById("sun_moon").style.background = "#666666"
+    }
+
+    if(h == 0){
+        h = 12;
     }
     
     if(h > 12){
