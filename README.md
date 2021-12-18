@@ -12,9 +12,9 @@ Subsequently, the webpage displays personal information about myself such as :
 In addition, the webpage displays the contents based on your windows theme, i.e, Light and dark mode. Users can select the theme using the toggle button.
 
 ## 🤓 References
-* Cat and moon : **Cat on the moon** [CodenPen] (https://codepen.io/Mark_Bowley/pen/xEbuI)
-* Cloud animation : **Animated Clouds** [CodePen] (https://codepen.io/Mark_Bowley/pen/xEbuI)
-* Digital clock Widget : **Digital Clock** [CodePen] (https://codepen.io/afarrar/pen/JRaEjP)
+* Cat and moon : **Cat on the moon** [Website] (https://codepen.io/Mark_Bowley/pen/xEbuI)
+* Cloud animation : **Animated Clouds** [Website] (https://codepen.io/Mark_Bowley/pen/xEbuI)
+* Digital clock Widget : **Digital Clock** [Website] (https://codepen.io/afarrar/pen/JRaEjP)
 * Social Media buttons/effects : **Awesome Social Media Buttons with hover animation** [Website](https://www.codingnepalweb.com/social-media-buttons-with-hover-animation/)
 
 
