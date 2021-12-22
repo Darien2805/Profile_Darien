@@ -10,6 +10,16 @@ body{
     overflow-x: hidden;
 }
 
+#navbar{
+    z-index: 1; 
+    background-color: #DFDFDF;
+}
+
+a.nav-link.active:hover, a.nav-link:hover {
+    color: #3284CD !important;
+}
+
+
 /* Clock */
 .clock {
     color: #CEEB87;
