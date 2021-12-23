@@ -26,15 +26,6 @@ if (hours >= 19 || hours <= 7){
     night_cat_moon()
 }
 
-if(hours == 0){
-    h = 12;
-}
-
-if(hours > 12){
-    h = h - 12;
-    session = "PM";
-}
-
 //toggle switch
 const toggle = document.getElementById('toggle');
 
