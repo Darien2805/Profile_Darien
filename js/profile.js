@@ -1,4 +1,12 @@
 //timing
+
+if (window.innerWidth < 500) {
+    document.getElementById("contact").style.borderRightStyle = "none";
+    document.getElementById("contact").style.borderBottomStyle = "solid";
+    document.getElementById("biography").style.borderRightStyle = "none";
+    document.getElementById("biography").style.borderBottomStyle = "solid";
+}
+
 function showTime(){
     var date = new Date();
     var h = date.getHours(); // 0 - 23
