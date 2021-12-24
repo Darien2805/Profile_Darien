@@ -27,7 +27,6 @@ In addition, the webpage displays the contents based on your windows theme, i.e,
             <th>Users</th>
             <th>Guests</th>
         </tr>
-
         <tr>
             <td>Login Page</td>
             <td>
@@ -38,7 +37,6 @@ In addition, the webpage displays the contents based on your windows theme, i.e,
             <td><img src = ""></td>
             <td><img src = ""></td>
         </tr>
-
         <tr>
             <td>Signup Page</td>
             <td>
@@ -49,7 +47,6 @@ In addition, the webpage displays the contents based on your windows theme, i.e,
             <td><img src = ""></td>
             <td><img src = ""></td>
         </tr>
-
     </tbody>
 </table>
 
