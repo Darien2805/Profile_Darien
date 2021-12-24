@@ -19,35 +19,3 @@ In addition, the webpage displays the contents based on your windows theme, i.e,
 * Digital clock Widget : **Digital Clock** [Website](https://codepen.io/afarrar/pen/JRaEjP)
 * Social Media buttons/effects : **Awesome Social Media Buttons with hover animation** [Website](https://www.codingnepalweb.com/social-media-buttons-with-hover-animation/)
 
-<table>
-    <tbody>
-        <tr>
-            <th>Features</th>
-            <th>Descriptions</th>
-            <th>Users</th>
-            <th>Guests</th>
-        </tr>
-        <tr>
-            <td>Login Page</td>
-            <td>
-                <ul>
-                    <li>Users are provided....</li>
-                </ul>
-            </td>
-            <td><img src = ""></td>
-            <td><img src = ""></td>
-        </tr>
-        <tr>
-            <td>Signup Page</td>
-            <td>
-                <ul>
-                    <li>This page allows....</li>
-                </ul>
-            </td>
-            <td><img src = ""></td>
-            <td><img src = ""></td>
-        </tr>
-    </tbody>
-</table>
-
-
