@@ -389,7 +389,7 @@ a.nav-link.active:hover, a.nav-link:hover {
 }
 
 /*social media buttons */
-.wrapper .button, .project .button{
+.wrapper .button, .dogpals .button, .bricks .button{
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -402,11 +402,11 @@ a.nav-link.active:hover, a.nav-link:hover {
     transition: all 0.3s ease-out;
 }
 
-.wrapper .button:hover, .project .button:hover{
+.wrapper .button:hover, .dogpals .button:hover, .bricks .button:hover{
     width: 170px;
 }
 
-.wrapper .button .icon, .project .button .icon{
+.wrapper .button .icon, .dogpals .button .icon, .bricks .button .icon{
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -425,31 +425,42 @@ a.nav-link.active:hover, a.nav-link:hover {
     background: #333;
 }
 
-/*For projects */
+/*For Dogpals */
 /* youtube icons */
-.project .button:nth-child(1):hover .icon{
+.dogpals .button:nth-child(1):hover .icon{
     background: #ff0000;
 }
 
-.project .button:nth-child(2):hover .icon{
+.dogpals .button:nth-child(2):hover .icon{
     background: #333;
 }
 
-.project .button:nth-child(3):hover .icon{
+.dogpals .button:nth-child(3):hover .icon{
     background: #87Ceeb;
 }
 
-.wrapper .button .icon i, .project .button .icon i{
+/* For Bricks */
+.bricks .button:nth-child(1):hover .icon{
+    background: #333;
+}
+
+.bricks .button:nth-child(2):hover .icon{
+    background: #333;
+}
+
+/* transition */
+
+.wrapper .button .icon i, .dogpals .button .icon i, .bricks .button .icon i{
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
 }
 
-.wrapper .button:hover .icon i, .project .button:hover .icon i{
+.wrapper .button:hover .icon i, .dogpals .button:hover .icon i, .bricks .button:hover .icon i{
     color: #fff;
 }
 
-.wrapper .button span, .project .button span{
+.wrapper .button span, .dogpals .button span, .bricks .button span{
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
@@ -457,6 +468,7 @@ a.nav-link.active:hover, a.nav-link:hover {
     transition: all 0.3s ease-out;
 }
 
+/* Profile */
 .wrapper .button:nth-child(1) span{
     color: #0072b1;
 }
@@ -465,15 +477,27 @@ a.nav-link.active:hover, a.nav-link:hover {
     color: #333;
 }
 
-/* youtube icons */
-.project .button:nth-child(1) span{
+/* For dogpals */
+/* youtube icon */
+.dogpals .button:nth-child(1) span{
     color: #ff0000;
 }
+/* github icon */
+.dogpals .button:nth-child(2) span{
+    color: #333;
+}
+/* website icon */
+.dogpals .button:nth-child(3) span{
+    color: #87Ceeb;
+}
 
-.project .button:nth-child(2) span{
+/* For bricks */
+/* github icon */
+.bricks .button:nth-child(1) span{
+    color: #333;
+}
+/* unity icon */
+.bricks .button:nth-child(2) span{
     color: #333;
 }
 
-.project .button:nth-child(3) span{
-    color: #87Ceeb;
-}
