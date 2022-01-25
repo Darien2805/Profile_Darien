@@ -512,10 +512,10 @@ a.nav-link.active:hover, a.nav-link:hover {
 
 /* For GroupTogether */
 /* github icon */
-.bricks .button:nth-child(1) span{
+.grptgther .button:nth-child(1) span{
     color: #333;
 }
-/* unity icon */
-.bricks .button:nth-child(2) span{
+/* telegram icon */
+.grptgther .button:nth-child(2) span{
     color: #229ED9;
 }
