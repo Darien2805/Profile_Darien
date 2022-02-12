@@ -406,6 +406,10 @@ a.nav-link.active:hover, a.nav-link:hover {
     width: 170px;
 }
 
+.wrapper .long:hover{
+    width: 200px;
+}
+
 .wrapper .button .icon, .dogpals .button .icon, .bricks .button .icon, .grptgther .button .icon{
     display: inline-block;
     height: 60px;
@@ -423,6 +427,14 @@ a.nav-link.active:hover, a.nav-link:hover {
 
 .wrapper .button:nth-child(2):hover .icon{
     background: #333;
+}
+
+.wrapper .button:nth-child(3):hover .icon{
+    background: #32CD32;
+}
+
+.wrapper .button:nth-child(4):hover .icon{
+    background: #1798c1;
 }
 
 /*For Dogpals */
@@ -484,6 +496,14 @@ a.nav-link.active:hover, a.nav-link:hover {
 
 .wrapper .button:nth-child(2) span{
     color: #333;
+}
+
+.wrapper .button:nth-child(3) span{
+    color: #32CD32;
+}
+
+.wrapper .button:nth-child(4) span{
+    color: #1798c1;
 }
 
 /* For dogpals */
