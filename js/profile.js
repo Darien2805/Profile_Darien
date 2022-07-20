@@ -1,91 +1,199 @@
-//timing
+//fade in and out of navbar for scrolling
+const nav = document.querySelector(".navbar");
+//Underlining of navbar when scrolling content
+const sections = document.querySelectorAll("div");
+const navLi = document.querySelectorAll('nav .navbar-collapse ul li a')
 
-if (window.innerWidth < 500) {
-    document.getElementById("contact").style.borderRightStyle = "none";
-    document.getElementById("contact").style.borderBottomStyle = "solid";
-    document.getElementById("biography").style.borderRightStyle = "none";
-    document.getElementById("biography").style.borderBottomStyle = "solid";
-}
+let lastScrollY = window.scrollY;
 
-function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
-    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-    
-    var day = days[date.getDay()]
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerHTML = day + "<br>" + time;
-    
-    setTimeout(showTime, 1000);
-}
-
-showTime();
-
-hours = new Date().getHours();
-// between 7pm to 7am display night
-if (hours >= 19 || hours <= 7){
-    night_cat_moon()
-}
-
-//toggle switch
-const toggle = document.getElementById('toggle');
-
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    // dark mode
-    night_cat_moon()
-}
-
-toggle.addEventListener('input', (e) => {
-    const isChecked = e.target.checked;
-
-    if(isChecked) {
-        night_cat_moon()
-    //document.getElementById("internships").classList = 'm-4 table table-striped'
-    //document.getElementById("projects").classList = 'm-4 table table-striped'
-    } else {
-        day_cat_sun()
-    //document.getElementById("internships").classList = 'm-4 table table-striped'
-    //document.getElementById("projects").classList = 'm-4 table table-striped'
+window.addEventListener("scroll", () =>{
+  if (lastScrollY < window.scrollY){
+    //scroll down
+    nav.classList.add("nav--hidden");
+  } else {
+    //scroll up
+    nav.classList.remove("nav--hidden");
+  }
+  lastScrollY = window.scrollY;
+  let current = '';
+  sections.forEach( section=>{
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY > sectionTop - sectionHeight /3){
+      current = section.getAttribute('id');
     }
+  })
+
+  navLi.forEach( li =>{
+    li.classList.remove("active");
+    if(li.classList.contains(current)){
+      li.classList.add('active')
+      if ($(window).width() > 767) {
+        nav.classList.remove("nav--hidden");
+      }
+    }
+  })
+});
+//End of scrolling code
+
+//Navbar side menu
+
+//Hamburger Animation
+document.querySelector('.first-button').addEventListener('click', function () {
+  document.querySelector('.animated-icon').classList.toggle('open');
+});
+//close navbar when is clicked
+const navLinks = document.querySelectorAll('.navbar-nav .nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { 
+      bsCollapse.toggle();
+      document.querySelector('.animated-icon').classList.remove('open');
+    })
+    
+})
+
+//End of navbar side menu
+
+/* Type writer for home page*/
+var TxtType = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { 
+    delta /= 2; 
+  }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+  that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  document.body.appendChild(css);
+};
+// End of type wrtier
+
+//Scrolling on reveal 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+//End of scrolling reveal
+
+//View more button
+$(function () {
+  $(".group .col-lg-4").slice(0, 3).show();
+  $(".personal .col-lg-4").slice(0, 3).show();
+  //console.log($(".personal .col-lg-4").length);
+  if ($(".group .col-lg-4").length <= 3){
+    $(".load-group").css('visibility', 'hidden');
+  }
+
+  if ($(".personal .col-lg-4").length <= 3){
+    $(".load-personal").css('visibility', 'hidden');
+  } 
+
+  //load more button for group
+  $("body").on('click touchstart', '#load-group', function (e) {
+    // e.preventDefault();
+    if (document.getElementById("load-group").innerText == "Load More"){
+      $(".group .col-lg-4:hidden").slideDown();
+      document.getElementById("load-group").innerText = "Load Less"
+    }else{
+      $(".group .col-lg-4").slice(3, $(".group .col-lg-4").length).slideUp();
+      document.getElementById("load-group").innerText = "Load More"
+    }
+  });
+
+  $("body").on('click touchstart', '#load-personal', function (e) {
+    // e.preventDefault();
+    if (document.getElementById("load-personal").innerText == "Load More"){
+      $(".personal .col-lg-4:hidden").slideDown();
+      document.getElementById("load-personal").innerText = "Load Less"
+    }else{
+      $(".personal .col-lg-4").slice(3, $(".personal .col-lg-4").length).slideUp();
+      document.getElementById("load-personal").innerText = "Load More"
+    }
+  });
+
 });
 
-function day_cat_sun(){
-    document.getElementById("profile_row").style.backgroundColor = "rgb(114, 183, 211)"
-    document.getElementById("title").style.color = "black"
-    document.getElementById("MyClockDisplay").style.color = "#CEEB87"
-    document.getElementById("sun_moon").classList.replace("moon", "sun")
-    document.getElementById("sun_moon").style.background = "radial-gradient(yellow, orange)"
-    //toggle button
-    document.getElementById('toggle').setAttribute("checked", "true")
-    document.getElementById("bio").classList.remove('dark-mode');
-    $(".toggle-switch").css({
-        "background-position": "100% 100%",
-        "box-shadow": "0 0 15px 10px hsl(0,0,0,0.1) inset"
-    });
+//Copy to clipboard functions
+function CopyUser(){
+  navigator.clipboard.writeText("Darien");
 }
 
-function night_cat_moon(){
-    document.getElementById("profile_row").style.backgroundColor = "#222222"
-    document.getElementById("title").style.color = "white"
-    document.getElementById("MyClockDisplay").style.color = "white"
-    document.getElementById("sun_moon").classList.replace("sun", "moon")
-    document.getElementById("sun_moon").style.background = "#666666"
-    
-    //toggle button
-    document.getElementById('toggle').setAttribute("checked", "true")
-    document.getElementById("bio").classList.add('dark-mode');
-    $(".toggle-switch").css({
-        "background-position": "5% 100%",
-        "box-shadow": "0 0 15px 10px hsl(0,0,0,0.1) inset"
-    });
+function CopyPw(){
+  navigator.clipboard.writeText("Darienabc123!");
 }
 
 
+//Arrow animation
+var arrowBounce = function() {
+  var arrow = $(".arrow");
+  if (arrow.hasClass("lift")) {
+    arrow.removeClass("lift");
+  } else {
+    arrow.addClass("lift");
+  }
+};
+// run the arrowBounce function every 800ms
+setInterval(arrowBounce, 800);
+
+// TEST
 
