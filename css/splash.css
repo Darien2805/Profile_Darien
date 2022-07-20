@@ -1,3 +1,15 @@
+@media only screen and (max-width: 600px) {
+  .wrapper_splash {
+    padding-top: 5% !important;
+    padding-left: 5% !important;
+    padding-right: 5%!important;
+    padding-bottom: 5% !important;
+  }
+
+  .text--backing, .text--left, .text--right{
+    font-size: 50px !important;
+  }
+}
 
 .splash{
     position: fixed;
