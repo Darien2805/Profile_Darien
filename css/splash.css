@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 600px) {
   .wrapper_splash {
     padding-top: 5% !important;
@@ -50,6 +51,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .wrapper_splash {
   position: relative;
   color: #2395f3;
