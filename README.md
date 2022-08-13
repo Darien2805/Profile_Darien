@@ -8,7 +8,6 @@ Subsequently, the webpage displays personal information about myself such as :
 * The focus of projects that I have accomplished in my internships
 * Projects
 * Contact Details
-In addition, the webpage displays the contents based on your windows theme, i.e, Light and dark mode. Users can select the theme using the toggle button.
 
 ## 🤓 References
 * Logo Text Animation : **Logo Text AnimationS** [Website](https://codepen.io/afrozX/pen/rNJMjEZ)
@@ -22,4 +21,5 @@ In addition, the webpage displays the contents based on your windows theme, i.e,
 * Bouncing Arrow : **Bouncing Arrow** [Website](https://codepen.io/barneychampaign/pen/bVvJvy)
 * Bootstrap hamburger menu animation : **Bootstrap hamburger menu animation** [Website](https://mdbootstrap.com/snippets/jquery/mdbootstrap/911054#css-tab-view)
 * Social Media buttons/effects : **Awesome Social Media Buttons with hover animation** [Website](https://www.codingnepalweb.com/social-media-buttons-with-hover-animation/)
+* Layout reference: **Brittany Chiang Profile**[Website](https://brittanychiang.com/)
 
