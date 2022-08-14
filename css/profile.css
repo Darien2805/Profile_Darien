@@ -390,7 +390,7 @@ body{
 .animate-character
 {
 	text-transform: uppercase;
-  	background-image: linear-gradient(
+	background-image: linear-gradient(
 		-225deg,
 		#9999CC 0%,
 		#ADD8E6 29%,
@@ -413,9 +413,9 @@ body{
 }
 
 @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+	to {
+		background-position: 200% center;
+	}
 }
 
 .shadow {
@@ -627,6 +627,11 @@ body{
 
 .fa-aws:hover{
 	color:#232F3E;
+	cursor: pointer;
+}
+
+.fa-c:hover{
+	color:#0056D2;
 	cursor: pointer;
 }
 
