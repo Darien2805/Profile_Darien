@@ -2,10 +2,9 @@
 A profile webpage of myself to kick start my developing skills of web application.
 
 # Features/information displayed
-The webpage displays the time (Left hand side), a profile picture of myself (Center), and a cat that pops up when hovered (Right hand side) for aesthetics. The background will change depending on the time.
-Subsequently, the webpage displays personal information about myself such as :
+Webpage that displays personal information about myself such as :
 * Profile
-* The focus of projects that I have accomplished in my internships
+* The focus of projects that I have accomplished during my internships and school journey
 * Projects
 * Contact Details
 
