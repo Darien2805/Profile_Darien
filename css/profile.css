@@ -373,7 +373,7 @@ body{
 #landing_page{
     margin: auto;
 	width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     padding-left: 15%;
 	/* background-color: #192129; */
 	color: white;
@@ -951,7 +951,7 @@ img {
 	display:none;
 }
 
-#load-group, #load-personal{
+#load-group, #load-personal, #load-smux{
 	background-color: #6A839E;;
 	color:#fff;
 	padding:5px 10px;
@@ -962,7 +962,7 @@ img {
 	display:inline-block;
 }
   
-#load-group:hover, #load-personal:hover{
+#load-group:hover, #load-personal:hover, #load-smux:hover{
 	border-color: var(--theme-yellow);
 	background-color:var(--theme-gray);
 

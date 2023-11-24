@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://webmail2016.univie.ac.at/?_task=mail&_action=compose&_id=1352399492642dcca12deed# -->
+<html lang="en" class="js chrome webkit translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Roundcube Webmail :: Write</title>
+<meta name="viewport" content="" id="viewport">
+
+<link rel="shortcut icon" href="https://webmail2016.univie.ac.at/skins/univie/images/favicon-uni.png?s=1575376940">
+
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Write_files/styles.css">
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Write_files/mail.min.css">
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Write_files/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Write_files/message_highlight.css">
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Write_files/browser.css">
+<script type="text/javascript" src="./Roundcube Webmail __ Write_files/ui.min.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="./Roundcube Webmail __ Write_files/googiespell.min.css">
+<script src="./Roundcube Webmail __ Write_files/jquery.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/common.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/app.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/publickey.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/googiespell.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/list.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/tinymce.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/editor.min.js"></script>
+<script>
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"mail","standard_windows":false,"locale":"de_DE","devel_mode":null,"rcversion":10411,"cookie_domain":"","cookie_path":"/","cookie_secure":true,"skin":"univie","blankpage":"skins/univie/watermark.html","refresh_interval":240,"session_lifetime":3600,"action":"compose","comm_path":"./?_task=mail","user_id":"boCE1j9oc5Oy3V4n","compose_extwin":false,"date_format":"dd.mm.yy","date_format_localized":"TT.MM.JJJJ","browser_capabilities":{"pdf":"1","flash":"0","tiff":"0","webp":"1"},"compose_id":"1352399492642dcca12deed","session_id":"afvtsfcjegrecdpvl7r4hp46it","mailbox":"INBOX","top_posting":false,"sig_below":true,"save_localstorage":true,"is_sent":false,"mimetypes":["text/plain","text/html","image/jpeg","image/gif","image/png","image/bmp","image/webp","application/x-javascript","application/pdf"],"keyservers":null,"drafts_mailbox":"INBOX.Drafts","draft_autosave":300,"default_font":"Verdana,Geneva,sans-serif","default_font_size":"10pt","compose_mode":"reply","show_sig":true,"reply_msgid":"\u003C5c062e691a23612e12221bc7cf399e95@univie.ac.at\u003E","max_disclosed_recipients":25,"spellcheck_langs":"Deutsch(Österreich)=de_AT,+Deutsch(Deutschland)=de_DE,English(US)=en_US,English(GB)=en_GB","spell_langs":{"de_AT":"Deutsch(Österreich)","de_DE":"Deutsch(Deutschland)","en_US":"English(US)","en_GB":"English(GB)"},"spell_lang":"de_DE","pagecount":0,"current_page":0,"signatures":[],"identities":{"527803":{"email":"a12242501@unet.univie.ac.at"}},"autocomplete_max":15,"autocomplete_min_length":1,"composebody":"composebody","editor_config":{"mode":"","lang":"de","skin_path":"skins/univie","spellcheck":1,"spelldict":0,"content_css":"program/resources/tinymce/content.css","disabled_plugins":[],"disabled_buttons":[],"extra_plugins":[],"extra_buttons":[]},"max_filesize":10485760,"filesizeerror":"Die hochzuladende Datei überschreitet die Maximalgröße von 10 MB.","max_filecount":"20","filecounterror":"Sie können maximal 20 Dateien mit einmal hochladen.","attachments":[],"filedrop":{"action":"upload","fieldname":"_attachments"},"textresponses":[],"request_token":"LCM7oAjemCZDN0OXj9ojU5J8wjJBTJIP"});
+rcmail.add_label({"loading":"Wird geladen …","servererror":"Serverfehler!","connerror":"Verbindungsfehler (Fehler beim Erreichen des Servers)!","requesttimedout":"Zeitüberschreitung der Anforderung","refreshing":"Aktualisierung läuft …","windowopenerror":"Das Popup-Fenster wurde blockiert!","uploadingmany":"Dateien werden hochgeladen …","uploading":"Datei wird hochgeladen …","close":"Schließen","save":"Speichern","cancel":"Abbrechen","alerttitle":"Achtung","confirmationtitle":"Sind Sie sich sicher...","delete":"Löschen","continue":"Weiter","ok":"OK","zid_loginout_redirect.zid_loginout_redirect":"[zid_loginout_redirect.zid_loginout_redirect]","notuploadedwarning":"Es wurden noch nicht alle Dateien hochgeladen. Bitte warten oder Hochladen abbrechen.","savingmessage":"Nachricht wird gespeichert …","siginserted":"Signatur erfolgreich eingefügt.","responseinserted":"Antwort erfolgreich eingefügt.","messagesaved":"Nachricht als Entwurf gespeichert.","converting":"Formatierungen werden antfernt …","editorwarning":"Wenn sie den Editor wechseln, könnten Textformatierungen verloren gehen. Möchten sie fortfahren?","discard":"Verwerfen","fileuploaderror":"Hochladen der Datei fehlgeschlagen.","sendmessage":"Nachricht jetzt senden","newresponse":"Neue Antwort erstellen","responsename":"Name","responsetext":"Text der Antwort","savingresponse":"Antwortvorlage wird gespeichert …","restoresavedcomposedata":"Es wurde ein nicht versandter Entwurf einer Nachricht gefunden.\n\nBetreff: $subject\nGespeichert am: $date\n\nMöchten Sie diese Nachricht wiederherstellen?","restoremessage":"Nachricht wiederherstellen?","restore":"Wiederherstellen","ignore":"Ignorieren","selectimportfile":"Bitte wählen Sie eine Datei zum Importieren aus.","messageissent":"Die Nachricht wurde bereits gesendet, aber noch nicht gespeichert. Wollen Sie es jetzt speichern?","loadingdata":"Daten werden geladen …","nopubkeyfor":"Kein gültiger öffentlicher Schlüssel für $email gefunden","nopubkeyforsender":"Kein gültiger öffentlicher Schlüssel für Ihre Absenderidentität gefunden. Möchten Sie die Nachricht nur für die Empfänger verschlüsseln?","encryptnoattachments":"Bereits hochgeladene Anhänge können nicht verschlüsselt werden. Bitte fügen Sie sie erneut im Verschlüsselungseditor hinzu.","encryptedsendialog":"Verschlüsselte Nachricht wird gesendet","searchpubkeyservers":"Möchten Sie öffentliche Schlüsselserver nach den fehlenden Schlüsseln durchsuchen?","importpubkeys":"Öffentliche Schlüssel importieren","encryptpubkeysfound":"Die folgenden öffentlichen Schlüssel wurden gefunden:","search":"Suche","import":"Importieren","keyid":"Schlüsselkennung","keylength":"Bits","keyexpired":"Abgelaufen","keyrevoked":"Widerrufen","keyimportsuccess":"Öffentlicher Schlüssel $key erfolgreich in Ihren Schlüsselbund importiert.","keyservererror":"Fehler beim Holen des Schlüssels vom Schlüsselserver.","attaching":"Datei wird angehängt …","namex":"Name","attachmentrename":"Anhang umbenennen","nosubject":"(kein Betreff)","nosenderwarning":"Bitte geben Sie die E-Mail-Adresse des Senders an.","norecipientwarning":"Bitte geben Sie mindestens einen Empfänger an.","nosubjectwarning":"Die Betreffzeile ist leer. Möchten Sie jetzt einen Betreff eingeben?","nobodywarning":"Diese Nachricht ohne Inhalt senden?","notsentwarning":"Die Nachricht wurde nicht gesendet und hat nicht gespeicherte Änderungen. Möchten Sie Ihre Änderungen verwerfen?","sendingmessage":"Nachricht wird gesendet …","searching":"Suche läuft …","disclosedrecipwarning":"Alle Empfänger sehen die E-Mail Adressen der anderen Empfänger. Um deren Privatsphäre zu schützen, können Sie das BCC-Feld verwenden.","disclosedreciptitle":"Zu viele öffentliche Empfänger","bccinstead":"Blindkopie verwenden","nosubjecttitle":"Kein Betreff","checking":"Überprüfung läuft …","errortitle":"Ein Fehler ist aufgetreten!","toggleadvancedoptions":"Erweiterte Optionen auswählen","options":"Optionen","autocompletechars":"Geben Sie mind. $min Zeichen für die Auto-Vervollständigung ein.","autocompletemore":"Mehrere Treffer. Bitte geben Sie mehr Buchstaben ein.","selectimage":"Bild auswählen","addimage":"Bild hinzufügen","selectmedia":"Film auswählen","addmedia":"Film hinzufügen","uploadprogress":"$percent ($current von $total)","GB":"GB","MB":"MB","KB":"KB","B":"B"});
+rcmail.gui_container("topline-left","topline-left");
+rcmail.gui_container("topline-center","topline-center");
+rcmail.gui_container("topline-right","topline-right");
+rcmail.gui_container("taskbar","taskbar");
+rcmail.gui_container("toolbar","compose-toolbar");
+rcmail.gui_container("compose-contacts-toolbar","compose-contacts-toolbar");
+rcmail.gui_container("composeoptions","composeoptions");
+rcmail.gui_container("attachmentmenu","attachmentoptionsmenu");rcmail.register_button('logout', 'rcmbtn101', 'link', '', '', '');
+rcmail.register_button('mail', 'rcmbtn102', 'link', '', 'button-mail button-selected', '');
+rcmail.register_button('addressbook', 'rcmbtn103', 'link', '', 'button-addressbook button-selected', '');
+rcmail.register_button('settings', 'rcmbtn104', 'link', '', 'button-settings button-selected', '');
+rcmail.register_button('logout', 'rcmbtn105', 'link', '', 'button-logout', '');
+rcmail.register_button('list', 'rcmbtn106', 'link', 'button back', '', '');
+rcmail.register_button('send', 'rcmbtn107', 'link', 'button send', '', '');
+rcmail.register_button('savedraft', 'rcmbtn108', 'link', 'button savedraft', '', '');
+rcmail.register_button('spellcheck', 'rcmbtn109', 'link', 'button spellcheck', 'button spellcheck pressed', '');
+rcmail.register_button('insert-sig', 'rcmbtn111', 'link', 'button insertsig', '', '');
+rcmail.register_button('compose-encrypted', 'rcmbtn112', 'link', 'button encrypt', 'button encrypt selected', '');
+rcmail.gui_object('qsearchbox', 'contactsearchbox');
+rcmail.register_button('reset-search', 'rcmbtn113', 'link', '', '', '');
+rcmail.gui_object('addressbookslist', 'directorylist');
+rcmail.gui_object('contactslist', 'contacts-table');
+rcmail.register_button('add-recipient', 'rcmbtn114', 'link', 'listbutton addto', '', '');
+rcmail.register_button('add-recipient', 'rcmbtn115', 'link', 'listbutton addcc', '', '');
+rcmail.register_button('add-recipient', 'rcmbtn116', 'link', 'listbutton addbcc', '', '');
+rcmail.register_button('firstpage', 'rcmbtn117', 'link', 'icon firstpage', '', '');
+rcmail.register_button('previouspage', 'rcmbtn118', 'link', 'icon prevpage', '', '');
+rcmail.register_button('nextpage', 'rcmbtn119', 'link', 'icon nextpage', '', '');
+rcmail.register_button('lastpage', 'rcmbtn120', 'link', 'icon lastpage', '', '');
+rcmail.gui_object('messageform', 'form');
+rcmail.register_button('extwin', 'rcmbtn121', 'link', '', 'button extwin pressed', '');
+rcmail.gui_object('attachmentlist', 'attachment-list');
+rcmail.gui_object('filedrop', 'compose-attachments');
+rcmail.register_button('send', 'rcmbtn122', 'input', '', '', '');
+rcmail.register_button('savedraft', 'rcmbtn123', 'input', '', '', '');
+rcmail.register_button('list', 'rcmbtn124', 'input', '', '', '');
+rcmail.gui_object('uploadform', 'uploadformFrm');
+rcmail.gui_object('responseslist', 'responseslist');
+rcmail.register_button('save-response', 'rcmbtn125', 'link', 'active', '', '');
+rcmail.register_button('open-attachment', 'attachmenuopen', 'link', 'icon active', '', '');
+rcmail.register_button('download-attachment', 'attachmenudownload', 'link', 'icon active', '', '');
+rcmail.register_button('rename-attachment', 'attachmenurename', 'link', 'icon active', '', '');
+rcmail.register_button('compose-encrypted', 'rcmbtn127', 'link', 'active', '', '');
+rcmail.register_button('compose-encrypted-signed', 'rcmbtn128', 'link', 'active', '', '');
+rcmail.gui_object('message', 'messagestack');
+</script>
+
+<script src="./Roundcube Webmail __ Write_files/jquery-ui.min.js"></script>
+<script src="./Roundcube Webmail __ Write_files/jquery.ui.datepicker-de.js"></script>
+<script src="./Roundcube Webmail __ Write_files/message_highlight.js"></script>
+
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Roundcube Webmail __ Write_files/m=el_main_css"></head>
+<body style="user-select: auto;">
+<script type="text/javascript">
+var UI = new rcube_mail_ui();
+</script>
+
+<div id="header">
+<div id="topline" role="banner" aria-labelledby="aria-label-topnav">
+	<h2 id="aria-label-topnav" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">window control</font></font></h2>
+	<div class="topleft">
+		
+					<a class="about-link" onclick="UI.show_about(this);return false" id="rcmbtn100" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Over</font></font></a>
+						<a href="https://zid.univie.ac.at/helpdesk/" target="_blank" class="support-link" id="supportlink"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">support</font></font></a>
+			</div>
+	
+	<div class="topright">
+	
+			<span class="username"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">a12242501@unet.univie.ac.at</font></font></span>
+		<a class="button-logout" id="rcmbtn101" role="button" href="https://webmail2016.univie.ac.at/?_task=logout" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;logout&#39;,this,event)" tabindex="0" aria-disabled="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De-register</font></font></a>
+	
+	</div>
+</div>
+<div id="topnav">
+	<h2 id="aria-label-tasknav" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">application tasks</font></font></h2>
+	<div id="taskbar" class="topright" role="navigation" aria-labelledby="aria-label-tasknav">
+		<a class="button-mail button-selected" id="rcmbtn102" role="button" href="https://webmail2016.univie.ac.at/?_task=mail" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;mail&#39;,this,event)" tabindex="-1" aria-disabled="true"><span class="button-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">e-mail</font></font></span><span class="tooltip"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">e-mail</font></font></span></a>
+		<a class="button-addressbook" id="rcmbtn103" role="button" href="https://webmail2016.univie.ac.at/?_task=addressbook" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;addressbook&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="button-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contacts</font></font></span><span class="tooltip"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contacts</font></font></span></a>
+		
+		<a class="button-settings" id="rcmbtn104" role="button" href="https://webmail2016.univie.ac.at/?_task=settings" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;settings&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="button-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ideas</font></font></span><span class="tooltip"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ideas</font></font></span></a>
+		<a class="button-logout" id="rcmbtn105" role="button" href="https://webmail2016.univie.ac.at/?_task=logout" onclick="return rcmail.command(&#39;switch-task&#39;,&#39;logout&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="button-inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De-register</font></font></span><span class="tooltip"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De-register</font></font></span></a>
+		<span class="minmodetoggle" role="presentation"></span>
+	</div>
+	<img src="./Roundcube Webmail __ Write_files/roundcube_logo.png" id="toplogo" alt="logo" onclick="if(window.rcmail)rcmail.command(&#39;switch-task&#39;,&#39;mail&#39;)">
+</div>
+
+<br style="clear:both">
+</div>
+
+
+<div id="mainscreen">
+
+<h1 class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Roundcube Webmail :: Write</font></font></h1>
+
+<!-- toolbar -->
+<h2 id="aria-label-toolbar" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">application toolbar</font></font></h2>
+<div id="messagetoolbar" class="toolbar fullwidth" role="toolbar" aria-labelledby="aria-label-toolbar">
+	<a class="button back" tabindex="2" id="rcmbtn106" role="button" data-tabindex="2" aria-disabled="false" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=list" onclick="return rcmail.command(&#39;list&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Interrupt</font></font></a>
+	
+	<span class="spacer"></span>
+	<a class="button send" title="send Message now" tabindex="2" id="rcmbtn107" role="button" data-tabindex="2" aria-disabled="false" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;send&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Send</font></font></a>
+	<a class="button savedraft" title="save message" tabindex="2" id="rcmbtn108" role="button" data-tabindex="2" aria-disabled="false" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;savedraft&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Save on computer</font></font></a>
+	<span class="spacer"></span>
+		<span class="dropbutton">
+		<a class="button spellcheck" title="Check spelling" tabindex="2" id="rcmbtn109" role="button" data-tabindex="2" aria-disabled="false" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;spellcheck&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">spelling, orthography</font></font></a>
+		<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#languages" class="dropbuttontip" id="spellmenulink" onclick="UI.toggle_popup(&#39;spellmenu&#39;,event);return false" aria-haspopup="true" aria-expanded="false" tabindex="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Select Spell Language</font></font></a>
+	</span>
+		<a class="button attach" title="Attach a file" onclick="rcmail.upload_input(&#39;uploadform&#39;)" aria-haspopup="true" aria-expanded="false" tabindex="2" id="rcmbtn110" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Attachment</font></font></a>
+	<a class="button insertsig disabled" title="Insert Signature" tabindex="-1" id="rcmbtn111" role="button" data-tabindex="2" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;insert-sig&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">signature</font></font></a>
+	<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#responses" class="button responses" label="responses" title="Add quick reply" id="responsesmenulink" unselectable="on" onmousedown="return false" onclick="UI.toggle_popup(&#39;responsesmenu&#39;,event);return false" tabindex="2" aria-haspopup="true" aria-expanded="false" aria-owns="textresponsesmenu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Answer quickly</font></font></a>
+	<span class="dropbutton" style="display:none">
+		<a class="button encrypt disabled" title="Encrypt message with Mailvelope" tabindex="-1" id="rcmbtn112" role="button" data-tabindex="2" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;compose-encrypted&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">encrypt</font></font></a>
+		<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#compose-encrypted" class="dropbuttontip" id="encryptionmenulink" onclick="UI.toggle_popup(&#39;encryptionmenu&#39;,event);return false" aria-haspopup="true" aria-expanded="false" tabindex="2" style="display:none"></a>
+	</span>
+	
+</div>
+
+<div id="mainscreencontent">
+
+<div id="composeview-left" style="width: 200px;">
+
+<!-- inline address book -->
+<div id="compose-contacts" class="uibox listbox" role="region" aria-labelledby="aria-label-composecontacts">
+<h2 id="aria-label-composecontacts" class="boxtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contacts</font></font></h2>
+	<div class="listsearchbox" role="search" aria-labelledby="aria-label-composequicksearch">
+		<h3 id="aria-label-composequicksearch" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contact search form</font></font></h3>
+		<div class="searchbox">
+			<label for="contactsearchbox" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacts search input</font></font></label>
+			<form name="rcmqsearchform" onsubmit="rcmail.command(&#39;search&#39;); return false" action="https://webmail2016.univie.ac.at/?_task=mail" method="get"><label for="contactsearchbox" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">search terms</font></font></label>
+<input name="_q" id="contactsearchbox" class="no-bs" placeholder="Seek …" type="text"></form>
+
+			<a id="searchmenulink" class="iconbutton searchicon"> </a>
+			<a class="iconbutton reset" title="reset search" id="rcmbtn113" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;reset-search&#39;,&#39;&#39;,this,event)" tabindex="0" aria-disabled="false"> </a>
+		</div>
+	</div>
+	<ul id="directorylist" class="treelist listing"><li id="rcmliMA" class="addressbook"><a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#list" rel="0" onclick="return rcmail.command(&#39;list-addresses&#39;,&#39;0&#39;,this)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Personal address book</font></font></a></li>
+<li id="rcmlidW5pdmll" class="addressbook"><a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#list" rel="univie" onclick="return rcmail.command(&#39;list-addresses&#39;,&#39;univie&#39;,this)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Staff at the University of Vienna</font></font></a></li>
+</ul>
+
+	<div class="scroller withfooter" tabindex="-1" style="top: 128px;">
+		<table id="contacts-table" class="listing iconized" role="listbox" aria-multiselectable="true" tabindex="0"><tbody></tbody></table>
+
+	</div>
+<div class="boxfooter">
+	<a title="At" class="listbutton addto disabled" id="rcmbtn114" role="button" tabindex="-1" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;add-recipient&#39;,&#39;to&#39;,this,event)"><span class="inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">To+</font></font></span></a><a title="Copy" class="listbutton addcc disabled" id="rcmbtn115" role="button" tabindex="-1" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;add-recipient&#39;,&#39;cc&#39;,this,event)"><span class="inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cc+</font></font></span></a><a title="blind copy" class="listbutton addbcc disabled" id="rcmbtn116" role="button" tabindex="-1" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;add-recipient&#39;,&#39;bcc&#39;,this,event)"><span class="inner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bcc+</font></font></span></a>
+</div>
+<div class="boxpagenav">
+	<a class="icon firstpage disabled" title="First page" id="rcmbtn117" role="button" tabindex="-1" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;firstpage&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">first</font></font></a>
+	<a class="icon prevpage disabled" title="page back" id="rcmbtn118" role="button" tabindex="-1" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;previouspage&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">previous</font></font></a>
+	<a class="icon nextpage disabled" title="Next page" id="rcmbtn119" role="button" tabindex="-1" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;nextpage&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nearest)</font></font></a>
+	<a class="icon lastpage disabled" title="Last page" id="rcmbtn120" role="button" tabindex="-1" aria-disabled="true" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;lastpage&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Last)</font></font></a>
+</div>
+</div>
+
+</div>
+
+<div id="composeview-right" role="main" style="left: 212px;">
+
+<form name="form" method="post" id="compose-content" class="uibox" action="https://webmail2016.univie.ac.at/?_task=mail&amp;_unlock=loading1680723425743&amp;_framed=1&amp;_lang=de_DE" style="overflow: hidden;" target="savetarget">
+<input type="hidden" name="_token" value="LCM7oAjemCZDN0OXj9ojU5J8wjJBTJIP">
+
+<!-- message headers -->
+<div id="composeheaders" role="region" aria-labelledby="aria-label-composeheaders">
+<h2 id="aria-label-composeheaders" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">message headers</font></font></h2>
+
+<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#options" id="composeoptionstoggle" class="moreheaderstoggle remove" title="Select compilation options" aria-expanded="true" style="cursor: pointer;"><span class="iconlink"></span></a>
+
+<table class="headers-table compose-headers">
+<tbody>
+	<tr>
+		<td class="title"><label for="_from"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">From</font></font></label></td>
+		<td class="editfield">
+			<input type="hidden" name="_task" value="mail"><input type="hidden" name="_action" value="send"><input type="hidden" name="_id" value="1352399492642dcca12deed"><input type="hidden" name="_attachments" value="2296821680723125072579400"><select name="_from" id="_from" tabindex="1" onchange="rcmail.change_identity(this)">
+<option value="527803" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Darien Shi Feng Tan &lt;a12242501@unet.univie.ac.at&gt;</font></font></option>
+</select>
+
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#identities" onclick="return rcmail.command(&#39;switch-task&#39;, &#39;settings/identities&#39;)" class="iconlink edit" tabindex="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edit Identities</font></font></a>
+		</td>
+	</tr><tr>
+		<td class="title top"><label for="_to"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">At</font></font></label></td>
+		<td class="editfield"><textarea name="_to" spellcheck="false" id="_to" cols="70" rows="1" tabindex="1" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox" style="height: 14px;">Carlos Andres Pachajoa Mejia &lt;carlos.pachajoa@univie.ac.at&gt;</textarea>
+</td>
+	</tr><tr id="compose-cc">
+		<td class="title top">
+			<label for="_cc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Copy</font></font></label>
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#cc" onclick="return UI.hide_header_row(&#39;cc&#39;);" class="iconbutton cancel" title="Extinguish" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Delete copy</font></font></a>
+		</td>
+		<td class="editfield"><textarea name="_cc" spellcheck="false" id="_cc" cols="70" rows="1" tabindex="1" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox" style="height: 14px;"></textarea></td>
+	</tr><tr id="compose-bcc">
+		<td class="title top">
+			<label for="_bcc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">blind copy</font></font></label>
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#bcc" onclick="return UI.hide_header_row(&#39;bcc&#39;);" class="iconbutton cancel" title="Extinguish" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Delete blind copy</font></font></a>
+		</td>
+		<td class="editfield"><textarea name="_bcc" spellcheck="false" id="_bcc" cols="70" rows="1" tabindex="1" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox" style="height: 14px;"></textarea></td>
+	</tr><tr id="compose-replyto">
+		<td class="title top">
+			<label for="_replyto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">answer to</font></font></label>
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#replyto" onclick="return UI.hide_header_row(&#39;replyto&#39;);" class="iconbutton cancel" title="Extinguish" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Delete reply to</font></font></a>
+		</td>
+		<td class="editfield"><input name="_replyto" spellcheck="false" id="_replyto" size="70" tabindex="1" value="" type="text" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox"></td>
+	</tr><tr id="compose-followupto">
+		<td class="title top">
+			<label for="_followupto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Followup To</font></font></label>
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#followupto" onclick="return UI.hide_header_row(&#39;followupto&#39;);" class="iconbutton cancel" title="Extinguish" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Delete Followup To</font></font></a>
+		</td>
+		<td class="editfield"><input name="_followupto" spellcheck="false" id="_followupto" size="70" tabindex="1" value="" type="text" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox"></td>
+	</tr><tr>
+		<td></td>
+		<td class="formlinks">
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#cc" onclick="return UI.show_header_row(&#39;cc&#39;)" id="cc-link" class="iconlink add" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">add copy</font></font></a>
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#bcc" onclick="return UI.show_header_row(&#39;bcc&#39;)" id="bcc-link" class="iconlink add" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Add blind copy</font></font></a>
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#reply-to" onclick="return UI.show_header_row(&#39;replyto&#39;)" id="replyto-link" class="iconlink add" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Add reply address</font></font></a>
+			<a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#followup-to" onclick="return UI.show_header_row(&#39;followupto&#39;)" id="followupto-link" class="iconlink add" tabindex="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Add followup to</font></font></a>
+		</td>
+	</tr><tr>
+		<td class="title"><label for="compose-subject"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Regarding</font></font></label></td>
+		<td class="editfield"><input name="_subject" id="compose-subject" tabindex="1" spellcheck="true" value="Re: Questions related to homework" type="text"></td>
+	</tr>
+</tbody>
+</table>
+
+<div id="composebuttons" class="formbuttons">
+	<a class="button extwin" title="Open in new window" id="rcmbtn121" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;extwin&#39;,&#39;&#39;,this,event)" tabindex="0" aria-disabled="false"><span class="icon"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Open in new window</font></font></span></a>
+</div>
+
+<!-- (collapsible) message options -->
+<div id="composeoptions" role="region" aria-labelledby="aria-label-composeoptions" style="display: block;">
+	<h2 id="aria-label-composeoptions" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Build Options</font></font></h2>
+		<span class="composeoption">
+		<label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">editing type
+			</font></font><select name="editorSelector" tabindex="4" onchange="return rcmail.command(&#39;toggle-editor&#39;, {id: &#39;composebody&#39;, html: this.value == &#39;html&#39;}, &#39;&#39;, event)">
+<option value="html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML</font></font></option>
+<option value="plain" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">plain text</font></font></option>
+</select>
+</label>
+	</span>
+		<span class="composeoption">
+		<label for="rcmcomposepriority"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">priority
+			</font></font><select name="_priority" id="rcmcomposepriority" tabindex="4">
+<option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lowest</font></font></option>
+<option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Low</font></font></option>
+<option value="0" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Normal</font></font></option>
+<option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">High</font></font></option>
+<option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Highest</font></font></option>
+</select>
+</label>
+	</span>
+				<span class="composeoption">
+		<label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">save message in</font></font><select name="_store_target" style="max-width:12em" tabindex="4">
+<option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- Don `t save -</font></font></option>
+<option value="INBOX"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INBOX</font></font></option>
+<option value="INBOX.Drafts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">drafts</font></font></option>
+<option value="INBOX.Sent" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">send</font></font></option>
+<option value="INBOX.Junk"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">junk</font></font></option>
+<option value="INBOX.Trash"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">trash</font></font></option>
+<option value="INBOX.Archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archives</font></font></option>
+<option value="INBOX.Templates"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Templates</font></font></option>
+</select>
+</label>
+	</span>
+		
+</div>
+
+</div>
+
+<!-- message compose body -->
+<div id="composeview-bottom" style="height: 619.914px;">
+	<div id="composebodycontainer">
+		<label for="composebody" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">message body</font></font></label>
+		
+<input type="hidden" name="_draft_saveid" value="102"><input type="hidden" name="_draft" value="1"><input type="hidden" name="_is_html" value="0"><input type="hidden" name="_framed" value="1">
+<textarea name="_message" id="composebody" cols="70" rows="20" tabindex="1" data-html-editor="1" style="width: 1301px; height: 611.914px;">Am 05.04.2023 11:02, schrieb Carlos Andres Pachajoa Mejia:
+&gt; Hello,
+&gt; 
+&gt; there is a lot to unpack here.
+&gt; 
+&gt; - We in the homework are representing matrices using linear arrays. The matrix M
+&gt; 
+&gt;   1 2 3
+&gt;   4 5 6
+&gt;   7 8 9
+&gt; 
+&gt;   is represented in memory as an array M &lt;-&gt; [1 2 3 4 5 6 7 8 9]
+&gt; 
+&gt; - Variables declared as int *a are pointers to memory. They contain an
+&gt; address to a location in memory that contains an integer.
+&gt;   Variables declared as int **a are pointers to pointers to memory.
+&gt; They contain the address of a location in memory that itself contains
+&gt; an address to a location in memory containing an integer; we don't
+&gt; need this right now.
+&gt; 
+&gt; - Given an array declared as 'double *a', when you write a[i], what
+&gt; you're accessing is the element at address *a + size_of_double x i. In
+&gt; order to be able to do this, you need to know the size of a double
+&gt; number in memory, so that you can locate an element. In the example
+&gt; with the matrix above, M[0] == 1 and M[8] == 9.
+&gt; 
+&gt; - The notation a[i][j] REQUIRES information about the stride for the
+&gt; first index. That is to say, in the matrix before, which is the array
+&gt; M &lt;-&gt; [1 2 3 4 5 6 7 8 9], what is the meaning of M[1][1]? Expressed
+&gt; just as this, this is not well defined. If the stride is 2, then it
+&gt; would be "4", if the stride is 3, then it would be "5". Stride
+&gt; information is provided as 'double M[3][]'. With that information we
+&gt; can unambiguously identify positions by writing something like M[1][1]
+&gt; 
+&gt; - When you declare c[n][n], what you get is still a linear array, and
+&gt; a pointer to its first element. It is therefore more similar to double
+&gt; *c than to double **c.
+&gt; 
+&gt; - You should still not return that array from the function. You're
+&gt; declaring the array c[n][n] inside the function. The memory used to
+&gt; store the data is in the "stack" of the function. Once the function
+&gt; returns, that memory becomes invalid. Instead, please receive all
+&gt; three matrices as arguments to the function, like in the slides, and
+&gt; allocate the necessary memory outside the matrix, using malloc, for
+&gt; example.
+&gt; 
+&gt; I hope this helps.
+&gt; 
+&gt; Best regards,
+&gt; 
+&gt; Carlos Pachajoa
+&gt; 
+&gt; 
+&gt; Am 05.04.2023 00:50, schrieb Darien Shi Feng Tan:
+&gt;&gt; Dear Prof. Carlos,
+&gt;&gt;
+&gt;&gt; Apologies prof but since i am still new to C, i am unsure why i am
+&gt;&gt; unable to return c of 2d array type. I have researched through the web
+&gt;&gt; but unable to find an explanation for it
+&gt;&gt;
+&gt;&gt; Regards,
+&gt;&gt; Darien
+&gt;&gt;
+&gt;&gt; Am 04.04.2023 22:44, schrieb Darien Shi Feng Tan:
+&gt;&gt;&gt; Dear Prof. Carlos,
+&gt;&gt;&gt;
+&gt;&gt;&gt; Is the graph clear now because the values at 10^9 is relatively much smaller?
+&gt;&gt;&gt;
+&gt;&gt;&gt; Yes, matrix c is a typo. Apologies but I think is because i have not
+&gt;&gt;&gt; initialised array a,b and c. May I ask what values should the matrix
+&gt;&gt;&gt; be if the size keeps changing? Will it be okay if i were to put all
+&gt;&gt;&gt; values to be 1?
+&gt;&gt;&gt;
+&gt;&gt;&gt; Regards,
+&gt;&gt;&gt; Darien
+&gt;&gt;&gt;
+&gt;&gt;&gt; Am 04.04.2023 11:05, schrieb Carlos Andres Pachajoa Mejia:
+&gt;&gt;&gt;&gt; Hello,
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; yes. I forgot about the scales, but that time is to be expected,
+&gt;&gt;&gt;&gt; although I should not have asked you to run something that takes that
+&gt;&gt;&gt;&gt; long to complete. As shown in the lecture, the exercise in Harris for
+&gt;&gt;&gt;&gt; a size of 10^9 takes about 5 seconds, so we can expect about 5000
+&gt;&gt;&gt;&gt; seconds for a problem a thousand times longer. I assume that you
+&gt;&gt;&gt;&gt; already have all the data now, so please keep it.
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; The plot you attached is not clear. Please use a logarithmic x axis.
+&gt;&gt;&gt;&gt; Otherwise all information for the smaller values of x gets squashed
+&gt;&gt;&gt;&gt; together: Currently we have the smaller values all to the left,
+&gt;&gt;&gt;&gt; difficult to read, and the values corresponding to 10^12 all the way
+&gt;&gt;&gt;&gt; to the right.
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; Regarding the matrix-vector product, I cannot see what error your IDE
+&gt;&gt;&gt;&gt; is showing you, but yes, the way you're accessing the elements of your
+&gt;&gt;&gt;&gt; matrices is not correct. There are two problems that I can see now:
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; (1) Indexing of matrix c: Currently you're accessing it as c[i+j].
+&gt;&gt;&gt;&gt; This might be a typo, but in case it is not, I would like to ask you
+&gt;&gt;&gt;&gt; to write down a simple matrix, of size 3x3, and think about where each
+&gt;&gt;&gt;&gt; of its elements is located in memory. If we have 0&lt;=i&lt;n and 0&lt;=j&lt;n,
+&gt;&gt;&gt;&gt; what is the maximum value of i+j (the index that we are entering in
+&gt;&gt;&gt;&gt; c[i+j]). Are we visiting every single element of the matrix c, as we
+&gt;&gt;&gt;&gt; expect to do?
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; (2) Trying to access a one dimensional array with two indices: In your
+&gt;&gt;&gt;&gt; function, you're getting all three parameters (a, b and c) as linear
+&gt;&gt;&gt;&gt; arrays (double *a, for example), without further information about
+&gt;&gt;&gt;&gt; their shape. Then, after understanding problem (1), what is the
+&gt;&gt;&gt;&gt; meaning of a statement such as a[1][2] for such an array? Does it make
+&gt;&gt;&gt;&gt; sense?
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; Please let me know if you solve these problems.
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; Best regards,
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; Carlos Pachajoa
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt; Am 04.04.2023 01:37, schrieb Darien Shi Feng Tan:
+&gt;&gt;&gt;&gt;&gt; Hi prof,
+&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt; May i ask would something like this be sufficient and is it expected
+&gt;&gt;&gt;&gt;&gt; to run for this long?
+&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt; In addition for question 1.2 (part 1), why does the line throws an
+&gt;&gt;&gt;&gt;&gt; error when i followed the code in the slides? I researched online and
+&gt;&gt;&gt;&gt;&gt; it seems to be due to accessing a 2d array when a,b,c is declared as a
+&gt;&gt;&gt;&gt;&gt; 1d array?
+&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt; Regards,
+&gt;&gt;&gt;&gt;&gt; Darien
+&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt; Am 01.04.2023 01:07, schrieb Carlos Pachajoa:
+&gt;&gt;&gt;&gt;&gt;&gt; Try making a semilogarithmic plot in x, with problem sizes 10^9,
+&gt;&gt;&gt;&gt;&gt;&gt; 10^10, 10^11, 10^12. We can expect that the difference between the
+&gt;&gt;&gt;&gt;&gt;&gt; time for 10^9 and 10^9+1 is negligibe
+&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt; On Apr 1, 2023 00:09, Darien Shi Feng Tan
+&gt;&gt;&gt;&gt;&gt;&gt; &lt;a12242501@unet.univie.ac.at&gt; wrote:
+&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Hi Prof. Carlos,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; But I am suppose to plot the runtimes for n &gt;= 10^9 and i do not
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; think i
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; am doing it correctly as shown in the screen shot.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Thank you!
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Darien
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 31.03.2023 23:57, schrieb Carlos Andres Pachajoa Mejia:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Hello,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; the end range for the exercise is 10^9, but you can expect
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; accurate
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; results only up to 20!. The result of the factorial function for
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; positive integers is not zero, and, restricted to 64 bit unsigned
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; integers it will produce a non-zero result until about 64!.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; Explaining
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; why the results are no longer accurate is part of the homework.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Please remember that, with a computer, you're working with a
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; finite
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; ring of numbers. I hope that helps.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Let me know if there is progress.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Best regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Carlos Pachajoa
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 31.03.2023 00:36, schrieb Darien Shi Feng Tan:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Dear Prof. Carlos,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; May i ask what is the end range for n should be as the results
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; seems
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; to always be 0 for n&gt;= 10^9?
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; In addition, it is suppose to be 0?
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Darien
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 29.03.2023 16:15, schrieb Carlos Pachajoa:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; maybe you can show me later today. It would be easier to check
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; it
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; like
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; that
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; On Mar 29, 2023 15:19, Darien Shi Feng Tan
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; &lt;a12242501@unet.univie.ac.at&gt; wrote:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Dear Prof. Carlos,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Yes, i understand that it is not an infinite loop but I am
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; unsure
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; why
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; the function keeps running without stopping only for input of
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; odd
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; values
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; as I was expecting it to return a value of 0.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Darien
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 29.03.2023 14:03, schrieb Carlos Andres Pachajoa Mejia:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Hello,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; the function fact_u, as written in the homework statement,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; doesn't
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; have an infinite loop. You're right that if you modify it
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; beyond
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; that
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; you have to put everything inside the loop in curly braces.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; You can use the clock() function from time.h to measure the
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; runtime.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Best regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Carlos Pachajoa
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 28.03.2023 22:14, schrieb Darien Shi Feng Tan:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Dear Prof. Carlos,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; I found the mistake where the curly braces is missing in the
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; for
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; loop,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; hence it failed to enter the if loop. However, without
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; modifying
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; fact_u function, there will be no output as it seems that
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; the
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; loop is
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; infinite.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; In addition, may i ask how do i measure runtimes?
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Darien
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 28.03.2023 18:31, schrieb Carlos Andres Pachajoa Mejia:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Also, please let me know if this works
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 28.03.2023 16:56, schrieb Carlos Andres Pachajoa Mejia:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Hello,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; just a guess, but add a \n at the end of  your string in
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; printf.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; That
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; might force stdout, the file where you're writing that
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; content,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; to
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; flush(put on the screen).
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Besides that, I don't see why your code would fail to enter
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; the
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; loop.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Best regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Carlos Pachajoa
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Am 28.03.2023 16:08, schrieb Darien Shi Feng Tan:
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Dear Prof. Carlos,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; May I ask with regards to the 1st question for the
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; homework,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; i
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; understand that the function will return an incorrect
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; value
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; for odd
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; numbers. Hence, I decided to put an if loop but I
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; realised
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; that
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; regardless of what integer i check, it doesn't seem to
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; enter
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; the if
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; loop. May I ask why?
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Thank you!
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Regards,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Darien
+</textarea>
+
+	</div>
+	<div id="compose-attachments" class="rightcol droptarget" role="region" aria-labelledby="aria-label-composeattachments">
+		<h2 id="aria-label-composeattachments" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Attachments</font></font></h2>
+		<div class="upload-form" style="text-align:center; margin-bottom:10px">
+            <div class="hint"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maximum allowed file size is 10 MB</font></font></div>
+
+			<a class="button" tabindex="1" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="rcmail.upload_input(&#39;uploadform&#39;)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Attach a file</font></font></a>
+		</div>
+		<ul id="attachment-list" class="attachmentslist" data-tabindex="1"><li id="rcmfile2296821680723125072579400" class="image png"><a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#load" class="filename" onclick="return rcmail.command(&#39;load-attachment&#39;,&#39;rcmfile2296821680723125072579400&#39;, this, event)" tabindex="1"><span class="attachment-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Screenshot 2023-04-05 at 9.10.45 PM.png</font></font></span><span class="attachment-size"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(124KB)</font></font></span></a><a class="drop skip-content" tabindex="1" aria-haspopup="true" title="options"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">options</font></font></a><a href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#delete" onclick="return rcmail.command(&#39;remove-attachment&#39;,&#39;rcmfile2296821680723125072579400&#39;, this, event)" title="Extinguish" class="delete" aria-label="Delete Screenshot 2023-04-05 at 9.10.45 PM.png" tabindex="1"></a></li></ul>
+		
+	</div>
+<!--
+	<div id="composeformbuttons" class="footerleft formbuttons floating">
+		<input type="button" class="button mainaction" tabindex="11" id="rcmbtn122" onclick="return rcmail.command('send','',this,event)" value="Nachricht jetzt senden" disabled>
+		<input type="button" class="button" tabindex="12" id="rcmbtn123" onclick="return rcmail.command('savedraft','',this,event)" value="Nachricht speichern" disabled>
+		<input type="button" class="button" tabindex="13" id="rcmbtn124" onclick="return rcmail.command('list','',this,event)" value="Abbrechen" disabled>
+	</div>
+-->
+</div>
+
+</form>
+
+</div><!-- end mailview-right -->
+
+<div id="composesplitterv" unselectable="on" role="presentation" class="splitter splitter-v" style="left: 203px; top: 0px;"></div></div><!-- end mainscreencontent -->
+
+</div><!-- end mainscreen -->
+
+<div id="uploadform"><form id="uploadformFrm" name="uploadform" method="post" enctype="multipart/form-data" class="smart-upload" action="https://webmail2016.univie.ac.at/?_task=mail">
+<input type="hidden" name="_token" value="LCM7oAjemCZDN0OXj9ojU5J8wjJBTJIP"><input multiple="" id="uploadformInput" type="file" name="_attachments[]" onchange="rcmail.command(&#39;send-attachment&#39;, this.form); this.value=null" class="smart-upload" tabindex="-1"></form>
+</div>
+
+
+<div id="spellmenu" class="popupmenu" aria-hidden="true"></div>
+
+<div id="responsesmenu" class="popupmenu" aria-hidden="true">
+	<h3 id="aria-label-responsesmenu" class="voice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quick replies menu</font></font></h3>
+	<ul class="toolbarmenu" id="textresponsesmenu" role="menu" aria-labelledby="aria-label-responsesmenu">
+		<li role="separator" class="separator" id=""><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Add quick reply</font></font></label></li>
+		<ul id="responseslist"></ul>
+		<li role="separator" class="separator"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Manage quick replies</font></font></label></li>
+		<li role="menuitem"><a unselectable="on" id="rcmbtn125" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;save-response&#39;,&#39;&#39;,this,event)" class="active" tabindex="0" aria-disabled="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Create new answer</font></font></a></li>
+		<li role="menuitem"><a class="active" onclick="return rcmail.command(&#39;switch-task&#39;, &#39;settings/responses&#39;)" id="rcmbtn126" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edit quick replies</font></font></a></li>
+	</ul>
+</div>
+
+<div id="attachmentmenu" class="popupmenu" aria-hidden="true">
+	<ul class="toolbarmenu" id="attachmentoptionsmenu" role="menu">
+		<li role="menuitem"><a id="attachmenuopen" class="icon active" role="button" tabindex="0" aria-disabled="false" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;open-attachment&#39;,&#39;&#39;,this,event)"><span class="icon extwin"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Open</font></font></span></a></li>
+		<li role="menuitem"><a id="attachmenudownload" class="icon active" role="button" tabindex="0" aria-disabled="false" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;download-attachment&#39;,&#39;&#39;,this,event)"><span class="icon download"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Download</font></font></span></a></li>
+		<li role="menuitem"><a id="attachmenurename" class="icon active" role="button" tabindex="0" aria-disabled="false" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;rename-attachment&#39;,&#39;&#39;,this,event)"><span class="icon rename"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rename</font></font></span></a></li>
+		
+	</ul>
+</div>
+
+<div id="encryptionmenu" class="popupmenu" aria-hidden="true">
+	<ul class="toolbarmenu" role="menu">
+		<li role="menuitem"><a id="rcmbtn127" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;compose-encrypted&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">encrypt messages</font></font></a></li>
+		<li role="menuitem"><a id="rcmbtn128" role="button" href="https://webmail2016.univie.ac.at/?_task=mail&amp;_action=compose&amp;_id=1352399492642dcca12deed#" onclick="return rcmail.command(&#39;compose-encrypted-signed&#39;,&#39;&#39;,this,event)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encrypt and sign</font></font></a></li>
+	</ul>
+</div>
+
+<div id="messagestack"></div>
+
+<script type="text/javascript">
+if (!window.UI) { var UI = new rcube_mail_ui(); }
+</script>
+<script>
+var googie = new GoogieSpell('skins/univie/images/googiespell/','./?_task=utils&_action=spell&_remote=1&lang=', false);
+googie.lang_chck_spell = "Rechtschreibung prüfen";
+googie.lang_rsm_edt = "Bearbeitung fortsetzen";
+googie.lang_close = "Schließen";
+googie.lang_revert = "Zurück zu";
+googie.lang_no_error_found = "Keine Rechtschreibfehler gefunden.";
+googie.lang_learn_word = "Zum Wörterbuch hinzufügen";
+googie.setLanguages({"de_AT":"Deutsch(Österreich)","de_DE":"Deutsch(Deutschland)","en_US":"English(US)","en_GB":"English(GB)"});
+googie.setCurrentLanguage('de_DE');
+googie.setDecoration(false);
+googie.decorateTextarea(rcmail.env.composebody);
+$(function() {
+rcmail.init();
+});
+</script><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="ltr"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="./Roundcube Webmail __ Write_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">Original text</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Contribute a better translation</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div>
+
+
+
+
+
+</body></html>

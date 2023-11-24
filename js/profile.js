@@ -139,6 +139,7 @@ window.addEventListener("scroll", reveal);
 $(function () {
   $(".group .col-lg-4").slice(0, 3).show();
   $(".personal .col-lg-4").slice(0, 3).show();
+  $(".smux .col-lg-4").slice(0, 3).show();
   //console.log($(".personal .col-lg-4").length);
   if ($(".group .col-lg-4").length <= 3){
     $(".load-group").css('visibility', 'hidden');
@@ -146,6 +147,10 @@ $(function () {
 
   if ($(".personal .col-lg-4").length <= 3){
     $(".load-personal").css('visibility', 'hidden');
+  } 
+
+  if ($(".smux .col-lg-4").length <= 3){
+    $(".load-smux").css('visibility', 'hidden');
   } 
 
   //load more button for group
@@ -168,6 +173,17 @@ $(function () {
     }else{
       $(".personal .col-lg-4").slice(3, $(".personal .col-lg-4").length).slideUp();
       document.getElementById("load-personal").innerText = "Load More"
+    }
+  });
+
+  $("body").on('click touchstart', '#load-smux', function (e) {
+    // e.preventDefault();
+    if (document.getElementById("load-smux").innerText == "Load More"){
+      $(".smux .col-lg-4:hidden").slideDown();
+      document.getElementById("load-smux").innerText = "Load Less"
+    }else{
+      $(".smux .col-lg-4").slice(3, $(".smux .col-lg-4").length).slideUp();
+      document.getElementById("load-smux").innerText = "Load More"
     }
   });
 
