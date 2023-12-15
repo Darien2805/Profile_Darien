@@ -125,6 +125,11 @@
 		font-size: 13px !important;
 	}
 
+	.smux-info{
+		width: 335px !important;
+		margin-left: 12px !important;
+	}
+
 
   }
 
@@ -313,7 +318,6 @@ body{
 	transform: scaleX(1);
 }
 
-
 /*End of Navbar css */
 
 /* Name (Darien) on navbar */
@@ -492,6 +496,32 @@ body{
 	
 	font-family: "Sofia", sans-serif;
 	font-size: 50px;
+}
+
+.typewrite > .wrap {
+	border-right: 0.08em solid #fff;
+	animation: typewriter 2s steps(30, end), blink-caret 2s step-end infinite;
+	white-space: nowrap;
+	overflow: hidden;
+	width: auto;
+}
+  
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: auto;
+	}
+}
+  
+@keyframes blink-caret {
+	0%, 20%, 50%, 80%, 100% {
+		border-color: #fff;
+	}
+	40%, 60% {
+		border-color: transparent;
+	}
 }
 /* End of Typewriter */
 
@@ -730,6 +760,16 @@ img {
 	min-height: 50vh;
 }
 
+.smux-info {
+    position: relative;
+    overflow: hidden;
+	margin: 1%;
+    padding: 2%;
+	width: fit-content;
+    border-radius: 6px;
+    background-color: #6A839E;
+}
+
 /* Cards */
 .service-block-two {
     position: relative;
@@ -867,9 +907,10 @@ img {
 }
 
 .text.team{
-	margin-top: 5%;
-	font-size: 11px !important;
-	color: #D1D8DF !important;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	font-size: 14px !important;
+	color: #C6E3CA !important;
 }
 
 /* Circle appear when hover */
@@ -902,7 +943,7 @@ img {
 }
 
 /* icons */
-.external-link, .youtube, .github, .figma, .telegram, .unity{
+.external-link, .youtube, .github, .figma, .telegram, .unity, .ppt{
 	padding-left: 5%;
 	float:right;
 }
@@ -944,6 +985,12 @@ img {
 /* Unity */
 .unity:hover{
 	color:#171515;
+	cursor: pointer;
+}
+
+/* Unity */
+.ppt:hover{
+	color:#D04423;
 	cursor: pointer;
 }
 
@@ -1074,5 +1121,3 @@ img {
 
 
 /* TRY */
-
-
